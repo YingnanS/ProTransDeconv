@@ -15,12 +15,13 @@
 #'         deconvolution results, and marker gene tables
 #' @export
 ProTransDeconv <- function(data,
-                                  type = c("intensity", "ratio", "spectra count"),
-                                  marker_genes = NULL,
-                                  use_markers_only = FALSE,
-                                  cv_threshold = 0.25,
-                                  output_html = NULL,cor_method = "pearson",
-                                  cell_proportion = NULL) {
+			   type = c("intensity", "ratio", "spectra count"),
+                           marker_genes = NULL,
+                           use_markers_only = FALSE,
+                           cv_threshold = 0.25,
+                           output_html = NULL,
+			   cor_method = "pearson",
+                           cell_proportion = NULL) {
   suppressPackageStartupMessages({
     library(ggplot2)
     library(ggridges)
