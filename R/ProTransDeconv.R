@@ -14,7 +14,7 @@
 #' @return A list containing transformed data, CV summary, ridge plot data,
 #'         deconvolution results, and marker gene tables
 #' @export
-process_and_report_cv <- function(data,
+ProTransDeconv <- function(data,
                                   type = c("intensity", "ratio", "spectra count"),
                                   marker_genes = NULL,
                                   use_markers_only = FALSE,
